@@ -1,0 +1,64 @@
+<html>
+<head>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="calculator.css">
+    <link rel="shortcut icon" type="image/png" href="512x512.png">
+    <title>My First Calculator</title>
+</head>
+<body>
+<div align="center">
+
+<span id="d1">CALCULATOR</span>
+<form class="input" NAME="MyCal">
+<table BORDER=0>
+<div class="input-button">
+<input class="display" type="text" NAME="input">
+</div>
+<br>
+</td>
+</tr>
+<tr>
+<td>
+        <input class="btn" type="button" value=" Del " OnClick="deleteChar()">
+        <input class="btn" type="button" value=" Bin " OnClick="equal(),bin()">
+        <input class="btn" type="button"  value="  AC  " OnClick="MyCal.input.value = ''">
+        <input class="btn" type="button"  value="  +  " OnClick="MyCal.input.value += ' + '">
+    <br>
+        <input class="btn" type="button"  value="  1  " OnClick="MyCal.input.value += '1'">
+        <input class="btn" type="button"  value="  2  " OnCLick="MyCal.input.value += '2'">
+        <input class="btn" type="button"  value="  3  " OnClick="MyCal.input.value += '3'">
+        <input class="btn" type="button"  value="  -  " OnClick="MyCal.input.value += ' - '">
+    <br>
+        <input class="btn" type="button"  value="  4  " OnClick="MyCal.input.value += '4'">
+        <input class="btn" type="button"  value="  5  " OnCLick="MyCal.input.value += '5'">
+        <input class="btn" type="button"  value="  6  " OnClick="MyCal.input.value += '6'">
+        <input class="btn" type="button"  value="  x  " OnClick="MyCal.input.value += ' * '">
+    <br>
+        <input class="btn" type="button"  value="  7  " OnClick="MyCal.input.value += '7'">
+        <input class="btn" type="button"  value="  8  " OnCLick="MyCal.input.value += '8'">
+        <input class="btn" type="button"  value="  9  " OnClick="MyCal.input.value += '9'">
+        <input class="btn" type="button" value="  /  " OnClick="MyCal.input.value += ' / '">
+
+    <br>
+        <input class="btn" type="button" value=" x10 " OnClick="equal();MyCal.input.value+= '* 10'">
+        <input class="btn" type="button" value="  0  " OnClick="MyCal.input.value += '0'">
+        <input class="btn" type="button" value="  ln   " OnClick="equal();ln()">
+        <input class="btn" type="button" value="  =  " OnClick="equal()">
+    <br>
+        <input class="btn" type="button" value=" Exp " OnClick="equal();exp()">
+        <input class="btn" type="button" value=" . " OnClick="MyCal.input.value+= '.'">
+        <input class="btn" type="button" value=" Square " OnClick="equal();square()">
+        <input class="btn" type="button" value=" Sqrt " OnClick="equal();sqrt()">
+</td>
+</tr>
+</div>
+<script src="./Calculator.js" type="text/javascript"></script>
+</table>
+</form>
+<audio controls autoplay loop>
+<source src="Irelia.mp3">
+</audio>
+<br>
+<marquee class="markq">&COPY;2019 Abhishek Das. All rights reserved.</marquee>
+</body>
+</html>
